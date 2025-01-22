@@ -2,7 +2,6 @@ const nomBoutique = "exemple";
 let nomSorcier = "Archibald";
 let nbPotions = 5;
 let prixPotionSoin = 3;
-let quantitePotionSoin = 10;
 let ouvertureBoutique = false;
 
 let affichageMenu = `Bienvenue dans mon humble boutique Aventurier. Que veux-tu savoir ?\n1. Le nom de la boutique\n2. Le nom du Sorcier\n3. Le prix d'un potion de soin\n4. La quantité d'une potion de soin`
@@ -40,4 +39,11 @@ function menu() {
 let choixMenu = menu()
 
 console.log(choixMenu)
+
+let quantitePotionSoin = prompt("Quantité potion soin : ")
+console.log(`Le prix pour ${quantitePotionSoin} potion soin est ${quantitePotionSoin * prixPotionSoin}`)
+
+
+
+
 
