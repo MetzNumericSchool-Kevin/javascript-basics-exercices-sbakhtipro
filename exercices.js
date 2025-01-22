@@ -1,6 +1,10 @@
+
+
 const nomBoutique = "exemple"
+let nomSorcier = "Archibald"
 let nbPotions = 5
 let prixPotionSoin = 3
+let quantitePotionSoin = 10
 let ouvertureBoutique = false
 
 if (ouvertureBoutique) {
@@ -9,4 +13,23 @@ if (ouvertureBoutique) {
 
 else {
     console.log(`La boutique ${nomBoutique} est fermée, revenez plus tard Aventurier !`)
+}
+
+function menu() {
+    let affichageMenu = console.log(`Bienvenue dans mon humble boutique Aventurier. Que veux-tu savoir ?\n1. Le nom de la boutique\n2. Le nom du Sorcier\n3. Le prix d'un potion de soin\n4. La quantité d'une potion de soin`)
+    let choix = prompt("Que souhaitez vous faire? ")    
+    if (parseInt(choix) === 1) {
+        console.log(nomBoutique)
+    }
+    else if (parseInt(choix) === 2) {
+        console.log(nomSorcier)
+    }
+    else if (parseInt(choix) === 3) {
+        console.log(prixPotionSoin)}
+    else if (parseInt(choix) === 4) {
+        console.log(quantitePotionSoin)
+    }
+    else {
+        console.log(`Mh... Désolé aventurier, je ne comprends pas ce que tu souhaites. Refais ton choix !`)
+    }
 }
