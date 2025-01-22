@@ -17,7 +17,7 @@ const nom_sorcier = prompt("Comment te nommes-tu, sorcier ? 🧙‍♂️");
 console.log("Le sorcier se nomme :" + nom_sorcier + " ! 🎉");
 ```
 
-Dès que tu verras `<ce_genre_de_chose>` c'est qu'il faudra remplacer `<ce_genre_de_chose>` par la bonne variable approprié au contexte.\
+Dès que tu verras `<ce_genre_de_chose>` c'est qu'il faudra remplacer `<ce_genre_de_chose>` par la bonne variable approprié au contexte.
 Tu comprendras en lisant la suite :)
 
 ## Exercices
