@@ -80,12 +80,6 @@ console.log(typesPotions)
 typesPotions.pop("potions_4")
 console.log(typesPotions)
 
-// - Créé un objet pour stocker les informations d'une potion de soin, tu auras dans cet objet :
-//   - le nom de la potion
-//   - son prix
-//   - le stock
-// - Affiche directement l'objet dans la console
-
 let potionObjet = {
     "nom":"potion_5",
     "prix":2.5,
@@ -94,5 +88,9 @@ let potionObjet = {
 
 console.log(potionObjet)
 
+console.log(potionObjet.nom)
+console.log(potionObjet["prix"])
 
-
+let inventaire = []
+inventaire.push(potionObjet)
+console.log(inventaire)
