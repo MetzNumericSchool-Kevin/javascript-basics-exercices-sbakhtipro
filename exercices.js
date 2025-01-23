@@ -121,5 +121,58 @@ inventaire.forEach(objet => {
     }
 });
 
+// --------------------------------------------------------------------------------------------------------------
 
+let bourseAventurier = 100
+let inventaireAventurier = []
 
+let bourseSorcier = 0
+let inventaireBoutique = [
+    {
+        "nom":"potion_soin",
+        "prix":40,
+        "stock":1
+    },
+    {
+        "nom":"potion_endurance",
+        "prix":20,
+        "stock":1
+    },
+    {
+        "nom":"potion_mana",
+        "prix":20,
+        "stock":2
+    }
+]
+
+// Le programme doit faire les choses suivantes :
+
+// - Les actions possibles de l'Aventurier
+//      - Avec ces informations:
+//        - Si la quantité demandée est supérieure au stock, prévient l'Aventurier que ce n'est pas possible
+//        - Sinon
+//          - déduit sa bourse du total et ajoute cela à la tienne
+//          - déduit le stock de la potion achetée
+//          - ajoute la/les potion(s) achetée(s) dans l'inventaire de l'Aventurier
+
+function achat(inventaire) {
+    inventaire.forEach(element => {
+        if (element.stock>0) {
+            console.log(element.nom)
+        }
+    });
+    prompt("Quelle potion souhaitez-vous acheter?")
+}
+
+achat(inventaireBoutique)
+
+//   2. Vendre une potion
+//      - Il peut essayer de vendre une des potions qu'il a dans l'inventaire (au même prix)
+//        - Pour cela, tu dois lui faire deviner un chiffre entre 1 et 5 (voir `Math.random`) 🎲
+//      - S'il a juste, tu lui rachete tout le stock de la potion en question (avec les mêmes règles de gestion que l'achat)
+//      - S'il a faux, tu peux lui dire de re-tenter sa chance 😈
+//   3. Quitter
+//      - Il ne peut pas hehe 😈
+// - Ce que l'aventurier ne sait pas, c'est que tu lui as jeté un sort qui l'oblige à répêter une de ces actions tant que sa bourse n'est pas vide avec `do ... while` 🪄
+// - Affiche ton gain, fini les soupes de 🍄 !
+// - 🚀 Si tu veux éviter la répétition de code tu peux utiliser des fonctions
