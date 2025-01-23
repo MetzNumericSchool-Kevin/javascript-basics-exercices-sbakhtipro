@@ -3,6 +3,7 @@ let nomSorcier = "Archibald";
 let prixPotionSoin = 3;
 let ouvertureBoutique = false;
 let typesPotions = ["potions_soin", "potions_2", "potions_3"]
+
 let stockBoutique = {
     "potions_soin":50,
     "potions_2":0,
@@ -72,5 +73,26 @@ console.log(typesPotions[typesPotions.length-1])
 for (i=0;i<=typesPotions.length;i+=1) {
     console.log(typesPotions[i])
 }
+
+typesPotions.push("potions_4")
+console.log(typesPotions)
+
+typesPotions.pop("potions_4")
+console.log(typesPotions)
+
+// - Créé un objet pour stocker les informations d'une potion de soin, tu auras dans cet objet :
+//   - le nom de la potion
+//   - son prix
+//   - le stock
+// - Affiche directement l'objet dans la console
+
+let potionObjet = {
+    "nom":"potion_5",
+    "prix":2.5,
+    "stock":50
+}
+
+console.log(potionObjet)
+
 
 
