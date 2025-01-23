@@ -80,17 +80,46 @@ console.log(typesPotions)
 typesPotions.pop("potions_4")
 console.log(typesPotions)
 
-let potionObjet = {
+let potionObjet1 = {
     "nom":"potion_5",
     "prix":2.5,
     "stock":50
 }
 
-console.log(potionObjet)
+console.log(potionObjet1)
 
-console.log(potionObjet.nom)
-console.log(potionObjet["prix"])
+console.log(potionObjet1.nom)
+console.log(potionObjet1["prix"])
 
 let inventaire = []
-inventaire.push(potionObjet)
+inventaire.push(potionObjet1)
+
+let potionObjet2 = {
+    "nom":"potion_6",
+    "prix":2.5,
+    "stock":80
+}
+
+let potionObjet3 = {
+    "nom":"potion_7",
+    "prix":2.5,
+    "stock":60
+}
+
+inventaire.push(potionObjet2,potionObjet3)
 console.log(inventaire)
+
+inventaire.forEach(element => {
+    console.log(element.nom)
+    console.log(element.prix)
+    console.log(element.stock)
+});
+
+inventaire.forEach(objet => {
+    for (const key in objet) {
+        console.log(`${key}:${objet[key]}`)
+    }
+});
+
+
+
